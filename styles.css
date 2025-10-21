@@ -1,10 +1,19 @@
 body {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  margin: 0;
-  padding: 0;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.search_listing_btn,
+.search_btn {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
 }
 
 .navbar {
@@ -91,4 +100,51 @@ body {
 
 .logo img {
   width: 100px !important;
+}
+
+.search_listing_btn {
+  color: black;
+  background-color: transparent !important;
+  border: 1px solid white !important;
+  margin: 10px;
+}
+
+.search_btn {
+  background: white;
+  color: #222;
+  border: none;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  transition: 0.4s ease-in-out;
+  width: 150px;
+  height: 40px;
+}
+
+.search_btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  padding: 25px;
+  border-radius: 50%;
+  background-size: 60%;
+}
+
+.our_service_section {
+  padding: 100px;
+}
+
+.icons {
+  padding: 50px;
+  background-color: #161616 !important;
+}
+
+.icons img {
+  width: 80px !important;
 }
