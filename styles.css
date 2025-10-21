@@ -1,28 +1,94 @@
-
-body{
-    background-image: url("images/header_img.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-     margin: 0;
-    padding: 0;
- 
-   
+body {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
   padding-top: 0 !important;
 }
 
-.nav_bar_img{
-    width: 100%;
-    background-size: contain;
-  
+.nav_bar_img {
+  width: 100%;
+  background-size: contain;
 }
 
-.container-fluid{
-    position: absolute;
-    
+.container-fluid {
+  position: absolute;
 }
 
+.header_img {
+  background: url("images/header_img.jpg") center/cover no-repeat fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+.header_img > * {
+  position: relative;
+  color: white;
+}
+
+.hero-btn {
+  background: #ffd600;
+  background: linear-gradient(180deg, #fff200 0%, #ffd600 100%);
+  color: #222;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 12px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-btn:hover {
+  color: white;
+  background: #f4cb00;
+  transition: transform 0.3s ease;
+}
+
+.website_content {
+  padding: 100px;
+  background: #161616;
+  color: white;
+}
+
+.get_it_sold {
+  padding: 100px;
+}
+
+.font {
+  padding-top: 60px;
+}
+
+.find_your_dream_home {
+  background: url("images/house_picture_4.png") center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.find_your_dream_home > * {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  padding: 20px;
+  top: 25%;
+  width: 50%;
+  left: 25%;
+}
+
+.logo {
+  padding: 100px;
+}
+
+.logo img {
+  width: 100px !important;
+}
