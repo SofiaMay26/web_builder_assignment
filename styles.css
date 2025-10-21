@@ -1,0 +1,28 @@
+
+body{
+    background-image: url("images/header_img.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+     margin: 0;
+    padding: 0;
+ 
+   
+}
+
+.navbar {
+  padding-top: 0 !important;
+}
+
+.nav_bar_img{
+    width: 100%;
+    background-size: contain;
+  
+}
+
+.container-fluid{
+    position: absolute;
+    
+}
+
