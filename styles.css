@@ -4,17 +4,24 @@ body {
   color: #222;
 }
 
+hr {
+  border: 1px solid white !important;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
+label,
 .search_listing_btn,
 .search_btn {
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
 }
+
+/* NAVIGATION BAR */
 
 .navbar {
   padding-top: 0 !important;
@@ -74,6 +81,24 @@ h6,
   padding-top: 60px;
 }
 
+.responsive-text {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .responsive-name {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .responsive-name {
+    font-size: 3rem;
+  }
+}
+
+/* FIND YOUR DREAM HOME */
+
 .find_your_dream_home {
   background: url("images/house_picture_4.png") center/cover no-repeat;
   height: 100vh;
@@ -128,6 +153,8 @@ h6,
   color: white;
 }
 
+/* CAROUSEL */
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: black;
@@ -146,5 +173,178 @@ h6,
 }
 
 .icons img {
-  width: 80px !important;
+  width: 50px !important;
+}
+
+/* CALL OR VISIT  */
+
+.call_or_visit {
+  background: #f8f8f8;
+  padding: 60px 20px;
+}
+
+.call_or_visit_font {
+  text-align: center;
+  font-weight: 700;
+  padding: 30px;
+  margin: 0 !important;
+  color: peachpuff !important;
+  background: #f8f8f8;
+}
+
+.form-box {
+  width: 350px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-box input,
+.form-box textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #c9c9c9;
+  outline: none;
+  font-size: 1rem;
+}
+
+.form-box input:focus,
+.form-box textarea:focus {
+  border-color: peachpuff;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.968);
+}
+
+.form-box textarea {
+  height: 120px;
+  resize: none;
+}
+
+.send-btn {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background: #005ec2;
+}
+
+@media (max-width: 991px) {
+  #map {
+    height: 360px !important;
+  }
+  .card {
+    min-height: auto;
+  }
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.go_daddy_airo {
+  width: 100px;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-box input,
+.form-box textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* POP-UP */
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-box input,
+.form-box textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.send-btn {
+  background: #0d6efd;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup {
+  display: none; /* hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: black;
+  padding: 50px;
+}
+
+.footer_icon {
+  width: 35px !important;
+}
+
+.footer_paragraph {
+  color: white !important;
+  font-weight: lighter !important;
 }
