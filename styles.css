@@ -119,6 +119,11 @@ label,
   left: 25%;
 }
 
+@media (max-width: 767px) {
+  .find_your_dream_home > * {
+    top: auto;
+  }
+}
 .logo {
   padding: 100px;
 }
